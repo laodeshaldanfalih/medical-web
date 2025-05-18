@@ -19,11 +19,7 @@ function getSuggestions(currentSlug: string, n: number) {
   return shuffled.slice(0, n);
 }
 
-export default function ArticleDetail({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function Page({ params }: { params: { slug: string } }) {
   const article = articles.find((a: Article) => a.slug === params.slug);
   if (!article) return notFound();
   const suggestions = getSuggestions(article.slug, 3);
