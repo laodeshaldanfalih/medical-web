@@ -19,8 +19,13 @@ function getSuggestions(currentSlug: string, n: number) {
   return shuffled.slice(0, n);
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const article = articles.find((a: Article) => a.slug === params.slug);
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
+  const article = articles.find((a: Article) => a.slug === slug);
   if (!article) return notFound();
   const suggestions = getSuggestions(article.slug, 3);
   return (
