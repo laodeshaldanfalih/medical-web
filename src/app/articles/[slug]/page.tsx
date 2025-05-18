@@ -1,12 +1,20 @@
 import { notFound } from "next/navigation";
-import articles from "@/app/articles/data/articles";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import articles from "../data/articles";
+
+type Article = {
+  title: string;
+  summary: string;
+  content: string;
+  image: string;
+  slug: string;
+};
 
 function getSuggestions(currentSlug: string, n: number) {
-  const filtered = articles.filter((a) => a.slug !== currentSlug);
+  const filtered = articles.filter((a: Article) => a.slug !== currentSlug);
   const shuffled = filtered.slice().sort(() => 0.5 - Math.random());
   return shuffled.slice(0, n);
 }
@@ -16,13 +24,13 @@ export default function ArticleDetail({
 }: {
   params: { slug: string };
 }) {
-  const article = articles.find((a) => a.slug === params.slug);
+  const article = articles.find((a: Article) => a.slug === params.slug);
   if (!article) return notFound();
   const suggestions = getSuggestions(article.slug, 3);
   return (
     <>
       <Header />
-      <section className="py-40 bg-gradient-to-b from-white via-white to-primary/5 min-h-screen">
+      <section className="py-20 bg-gradient-to-b from-white via-white to-primary/5 min-h-screen">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="bg-white/90 rounded-3xl shadow-2xl p-8 md:p-12 mb-12">
             <Image
@@ -45,7 +53,7 @@ export default function ArticleDetail({
               Artikel Lainnya
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {suggestions.map((suggestion) => (
+              {suggestions.map((suggestion: Article) => (
                 <Link
                   href={`/articles/${suggestion.slug}`}
                   key={suggestion.slug}
