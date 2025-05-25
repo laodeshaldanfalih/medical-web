@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FaPills,
   FaUserMd,
@@ -9,6 +11,8 @@ import {
   FaBrain,
   FaTruck,
 } from "react-icons/fa";
+import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const clinicServices = [
   {
@@ -72,21 +76,169 @@ const generalServices = [
   },
 ];
 
-const Services = () => {
-  return (
-    <section id="services" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">
-            Layanan Kami
-          </h2>
-          <p className="text-primary max-w-2xl mx-auto">
-            Kami menyediakan layanan klinik spesialis, terapi, serta apotek dan
-            praktek dokter umum untuk memenuhi kebutuhan kesehatan Anda.
-          </p>
-        </div>
+const therapySessions = [
+  {
+    image: "/images/terapi_session_1.jpeg",
+    title: "Sesi Terapi 1",
+  },
+  {
+    image: "/images/terapi_session_2.jpeg",
+    title: "Sesi Terapi 2",
+  },
+  {
+    image: "/images/terapi_session_3.jpeg",
+    title: "Sesi Terapi 3",
+  },
+  {
+    image: "/images/terpai_session_4.jpeg",
+    title: "Sesi Terapi 4",
+  },
+  {
+    image: "/images/terapi_session_5.jpeg",
+    title: "Sesi Terapi 5",
+  },
+  {
+    image: "/images/terapi_session_6.jpeg",
+    title: "Sesi Terapi 6",
+  },
+];
 
-        <div className="mb-12">
+const Services = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % therapySessions.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prev) => (prev - 1 + therapySessions.length) % therapySessions.length
+    );
+  };
+
+  // Autoscroll effect
+  useEffect(() => {
+    if (autoScrollRef.current) clearTimeout(autoScrollRef.current);
+    autoScrollRef.current = setTimeout(() => {
+      nextSlide();
+    }, 4000);
+    return () => {
+      if (autoScrollRef.current) clearTimeout(autoScrollRef.current);
+    };
+  }, [currentSlide]);
+
+  return (
+    <section id="services" className="pb-20">
+      {/* Therapy Session Carousel with Title Overlay - Full Width */}
+      <div className="mb-20">
+        <div className="relative">
+          {/* Carousel Container */}
+          <div className="relative h-[600px] overflow-hidden">
+            {therapySessions.map((session, idx) => (
+              <div
+                key={idx}
+                className={`absolute w-full h-full transition-all duration-500 ease-in-out ${
+                  idx === currentSlide
+                    ? "opacity-100 translate-x-0"
+                    : idx < currentSlide
+                    ? "opacity-0 -translate-x-full"
+                    : "opacity-0 translate-x-full"
+                }`}
+              >
+                <div className="relative w-full h-full">
+                  <Image
+                    src={session.image}
+                    alt={session.title}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                  {/* Title and Description Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
+                    <div className="absolute top-1/4 left-0 right-0 text-center px-4">
+                      <h2 className="text-5xl font-bold text-white mb-6">
+                        Layanan Kami
+                      </h2>
+                      <p className="text-white/90 text-xl max-w-2xl mx-auto">
+                        Kami menyediakan layanan klinik spesialis, terapi, serta
+                        apotek dan praktek dokter umum untuk memenuhi kebutuhan
+                        kesehatan Anda.
+                      </p>
+                    </div>
+                  </div>
+                  {/* Navigation Buttons - inside image, transparent by default */}
+                  <button
+                    onClick={prevSlide}
+                    className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/0 hover:bg-white/80 text-secondary p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-white/30"
+                    aria-label="Previous slide"
+                    style={{ zIndex: 10 }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-3 h-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    onClick={nextSlide}
+                    className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/0 hover:bg-white/80 text-secondary p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-white/30"
+                    aria-label="Next slide"
+                    style={{ zIndex: 10 }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-3 h-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </button>
+                  {/* Dots Indicator - inside image, bottom center */}
+                  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4 z-10">
+                    {therapySessions.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentSlide(idx)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none border-0 ${
+                          idx === currentSlide
+                            ? "bg-accent/20"
+                            : "bg-primary/30"
+                        }`}
+                        aria-label={`Go to slide ${idx + 1}`}
+                        style={{
+                          boxShadow:
+                            idx === currentSlide ? "0 0 0 2px #fff" : undefined,
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Other Services Sections with Container */}
+      <div className="container mx-auto px-4">
+        {/* Clinic Services */}
+        <div className="mb-20">
           <h3 className="text-2xl font-bold text-primary mb-6 text-left">
             Layanan Klinik
           </h3>
@@ -106,6 +258,7 @@ const Services = () => {
           </div>
         </div>
 
+        {/* General Services */}
         <div>
           <h3 className="text-2xl font-bold text-primary mb-6 text-left">
             Layanan Apotek & Umum
