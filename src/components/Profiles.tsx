@@ -1,32 +1,31 @@
+"use client";
+
 import { FaUserMd, FaComments, FaBrain, FaClinicMedical } from "react-icons/fa";
 import Image from "next/image";
 
-const doctors = [
+const profiles = [
   {
     name: "Prof. Dr. Nyilo Purnami dr. SpTHTKL(K)",
     specialization: "Dokter Spesialis THT-BKL",
     image: "/images/dokter.png",
     icon: <FaUserMd className="w-20 h-20 text-primary" />,
   },
-];
-
-const therapists = [
   {
-    name: "Terapis 1",
-    field: "Terapis Bicara",
-    image: "/images/terapis_bicara.png",
+    name: "Vanya Syifa Andrina, S.Psi",
+    specialization: "Terapis Wicara",
+    image: "/images/terapis_bicara.jpeg",
     icon: <FaComments className="w-20 h-20 text-accent" />,
   },
   {
-    name: "Terapis 2",
-    field: "Terapis Okupasi",
-    image: "/images/terapis_okupasi.png",
+    name: "Sri Lestari, Amd.OT",
+    specialization: "Terapis Okupasi",
+    image: "/images/terapis_okupasi.jpeg",
     icon: <FaBrain className="w-20 h-20 text-accent" />,
   },
   {
-    name: "Terapis 3",
-    field: "Terapis Perilaku",
-    image: "/images/terapis_perilaku.png",
+    name: "Vanya Syifa Andrina, S.Psi",
+    specialization: "Terapis Perilaku",
+    image: "/images/terapis_perilaku.jpeg",
     icon: <FaClinicMedical className="w-20 h-20 text-accent" />,
   },
 ];
@@ -50,8 +49,8 @@ const ProfileCard = ({
             <Image
               src={image}
               alt={name}
-              width={250}
-              height={250}
+              width={200}
+              height={200}
               style={{ objectFit: "cover" }}
               className="rounded-full object-cover"
             />
@@ -61,7 +60,7 @@ const ProfileCard = ({
         </div>
       </div>
     </div>
-    <h4 className="text-2xl font-extrabold text-secondary mb-2 text-center drop-shadow-sm">
+    <h4 className="text-md font-extrabold text-secondary mb-2 text-center drop-shadow-sm">
       {name}
     </h4>
     {badge}
@@ -85,35 +84,18 @@ const Profiles = () => {
           </p>
         </div>
         <div className="mb-16">
-          <div className="flex flex-wrap justify-center gap-10">
-            {doctors.map((doc, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
+            {profiles.map((profile, idx) => (
               <ProfileCard
                 key={idx}
-                icon={doc.icon}
-                name={doc.name}
+                icon={profile.icon}
+                name={profile.name}
                 badge={
-                  <span className="inline-block bg-primary/10 text-primary font-semibold px-4 py-1 rounded-full text-sm shadow">
-                    {doc.specialization}
+                  <span className="inline-flex items-center justify-center bg-primary/10 text-primary font-semibold px-4 py-1 rounded-lg text-sm shadow">
+                    {profile.specialization}
                   </span>
                 }
-                image={doc.image}
-              />
-            ))}
-          </div>
-        </div>
-        <div>
-          <div className="flex flex-wrap justify-center gap-10">
-            {therapists.map((terapist, idx) => (
-              <ProfileCard
-                key={idx}
-                icon={terapist.icon}
-                name={terapist.name}
-                badge={
-                  <span className="inline-block bg-accent/10 text-accent font-semibold px-12 py-1 rounded-lg text-sm shadow">
-                    {terapist.field}
-                  </span>
-                }
-                image={terapist.image}
+                image={profile.image}
               />
             ))}
           </div>
