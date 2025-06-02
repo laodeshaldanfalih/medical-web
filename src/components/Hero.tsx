@@ -16,19 +16,22 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-3xl text-white">
-          <h1 className="text-5xl font-bold mb-6">
-            Apotek & Praktek Dokter Terpercaya
+          <h1 className="text-4xl font-bold mb-6 animate-fadein">
+            Layanan Kesehatan THT dan Terapi Komprehensif di Hear Speech Care
           </h1>
-          <p className="text-xl mb-8">
-            Kami menyediakan layanan apotek lengkap, konsultasi medis dengan
-            dokter umum maupun spesialis THT, serta berbagai layanan terapi yang
-            ditangani oleh terapis profesional. Dapatkan obat-obatan
-            berkualitas, penanganan kesehatan yang komprehensif, serta terapi
-            pendukung seperti terapi bicara, okupasi, dan lainnya. Semuanya
-            tersedia dalam satu tempat untuk menunjang pemulihan dan
-            kesejahteraan Anda dan keluarga.
+          <p className="text-lg mb-8 animate-fadein">
+            Selamat datang di{" "}
+            <span className="font-bold">Hear Speech Care</span>, klinik
+            terpercaya yang mengutamakan kesehatan Anda! Kami menyediakan
+            layanan lengkap mulai dari pemeriksaan spesialis THT (Telinga,
+            Hidung, Tenggorokan), hingga terapi wicara, terapi okupasi, dan
+            terapi perilaku yang disesuaikan dengan kebutuhan Anda. Dengan
+            apotek yang tersedia di tempat, kami memastikan Anda mendapatkan
+            kemudahan akses untuk semua kebutuhan perawatan dan obat. Di{" "}
+            <span className="font-bold">Hear Speech Care</span>, kesehatan dan
+            kenyamanan Anda adalah prioritas utama kami!
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 animate-fadein">
             <Link
               href="#contact"
               className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-accent hover:text-white transition duration-300"
