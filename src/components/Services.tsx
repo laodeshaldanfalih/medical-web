@@ -156,10 +156,10 @@ const Services = () => {
                   {/* Title and Description Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
                     <div className="absolute top-1/4 left-0 right-0 text-center px-4">
-                      <h2 className="text-5xl font-bold text-white mb-6">
+                      <h2 className="text-5xl font-bold text-white mb-6 animate-fadein">
                         Layanan Kami
                       </h2>
-                      <p className="text-white/90 text-xl max-w-2xl mx-auto">
+                      <p className="text-white/90 text-xl max-w-2xl mx-auto animate-fadein">
                         Kami menyediakan layanan klinik spesialis, terapi, serta
                         apotek dan praktek dokter umum untuk memenuhi kebutuhan
                         kesehatan Anda.

@@ -78,9 +78,15 @@ const Profiles = () => {
           <h2 className="text-4xl font-bold text-secondary mb-4">
             Profil Dokter & Terapis
           </h2>
-          <p className="text-primary max-w-2xl mx-auto">
-            Kenali tim profesional kami yang siap membantu kebutuhan kesehatan
-            Anda.
+          <p className="text-primary max-w-5xl mx-auto">
+            Di <span className="font-bold">Hear Speech Care</span>, kami bangga
+            memiliki tim medis yang terdiri dari dokter spesialis THT dan
+            terapis profesional yang berpengalaman. Setiap anggota tim kami
+            memiliki kualifikasi yang solid dan komitmen untuk memberikan
+            perawatan terbaik bagi setiap pasien. Kami percaya bahwa perawatan
+            yang efektif dimulai dari pemahaman yang mendalam tentang kebutuhan
+            individu, dan tim kami siap memberikan dukungan yang penuh perhatian
+            untuk membantu Anda mencapai kesehatan yang optimal.
           </p>
         </div>
         <div className="mb-16">
