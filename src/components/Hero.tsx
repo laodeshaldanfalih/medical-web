@@ -20,16 +20,11 @@ const Hero = () => {
             Layanan Kesehatan THT dan Terapi Komprehensif di Hear Speech Care
           </h1>
           <p className="text-lg mb-8 animate-fadein">
-            Selamat datang di{" "}
-            <span className="font-bold">Hear Speech Care</span>, klinik
-            terpercaya yang mengutamakan kesehatan Anda! Kami menyediakan
-            layanan lengkap mulai dari pemeriksaan spesialis THT (Telinga,
-            Hidung, Tenggorokan), hingga terapi wicara, terapi okupasi, dan
-            terapi perilaku yang disesuaikan dengan kebutuhan Anda. Dengan
-            apotek yang tersedia di tempat, kami memastikan Anda mendapatkan
-            kemudahan akses untuk semua kebutuhan perawatan dan obat. Di{" "}
-            <span className="font-bold">Hear Speech Care</span>, kesehatan dan
-            kenyamanan Anda adalah prioritas utama kami!
+            <span className="font-bold">Hear Speech Care</span> adalah klinik
+            praktek dokter bersama yang menyediakan layanan lengkap mulai dari
+            pemeriksaan spesialis THT (Telinga, Hidung, Tenggorokan), terapi
+            wicara, terapi okupasi, dan terapi perilaku. Kami juga memiliki
+            Apotek untuk kebutuhan perawatan dan obat-obatan.
           </p>
           <div className="flex space-x-4 animate-fadein">
             <Link

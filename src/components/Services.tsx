@@ -19,7 +19,7 @@ const clinicServices = [
     icon: <FaUserMd className="w-10 h-10" />,
     title: "Dokter Spesialis THT-BKL",
     description:
-      "Konsultasi dan penanganan masalah Telinga, Hidung, Tenggorokan, Bedah Kepala & Leher.",
+      "Konsultasi dan penanganan masalah Telinga, Hidung, dan Tenggorokan.",
   },
   {
     icon: <FaAssistiveListeningSystems className="w-10 h-10" />,
@@ -30,12 +30,13 @@ const clinicServices = [
     icon: <FaComments className="w-10 h-10" />,
     title: "Terapi Bicara",
     description:
-      "Layanan terapi untuk membantu perkembangan bicara dan bahasa.",
+      "Layanan terapi untuk membantu individu mengatasi masalah komunikasi, bicara, dan bahasa pada anak-anak.",
   },
   {
     icon: <FaBrain className="w-10 h-10" />,
     title: "Terapi Okupasi",
-    description: "Membantu meningkatkan kemampuan aktivitas sehari-hari.",
+    description:
+      "Membantu anak dengan masalah fisik, sensorik, atau kognitif untuk mencapai kemandirian dalam aktivitas sehari-hari.",
   },
   {
     icon: <FaClinicMedical className="w-10 h-10" />,
@@ -122,7 +123,7 @@ const Services = () => {
     if (autoScrollRef.current) clearTimeout(autoScrollRef.current);
     autoScrollRef.current = setTimeout(() => {
       nextSlide();
-    }, 4000);
+    }, 10000);
     return () => {
       if (autoScrollRef.current) clearTimeout(autoScrollRef.current);
     };
@@ -138,7 +139,7 @@ const Services = () => {
             {therapySessions.map((session, idx) => (
               <div
                 key={idx}
-                className={`absolute w-full h-full transition-all duration-500 ease-in-out ${
+                className={`absolute w-full h-full transition-all duration-1000 ease-in-out ${
                   idx === currentSlide
                     ? "opacity-100 translate-x-0"
                     : idx < currentSlide
@@ -160,9 +161,10 @@ const Services = () => {
                         Layanan Kami
                       </h2>
                       <p className="text-white/90 text-xl max-w-2xl mx-auto animate-fadein">
-                        Kami menyediakan layanan klinik spesialis, terapi, serta
-                        apotek dan praktek dokter umum untuk memenuhi kebutuhan
-                        kesehatan Anda.
+                        Kami menyediakan layanan klinik spesialis, terapi
+                        komprehensif, dan apotek untuk memenuhi kebutuhan
+                        kesehatan Anda. Kami siap melayani Anda secara
+                        profesional.
                       </p>
                     </div>
                   </div>

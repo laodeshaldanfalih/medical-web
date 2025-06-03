@@ -80,8 +80,7 @@ const Contact = () => {
                 Jam Operasional
               </h4>
               <div className="space-y-2 text-primary">
-                <p>Senin - Jumat: 03:00 - 22:00</p>
-                <p>Sabtu: 09:00 - 18:00</p>
+                <p>Senin-Sabtu: 15.30 – 21.00</p>
               </div>
             </div>
           </div>
