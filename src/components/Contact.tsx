@@ -27,8 +27,8 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-secondary mb-1">Alamat</h3>
                 <p className="text-primary">
-                  Jl. Pandugo Timur XIII No.B-2, Penjaringan Sari, Kec. Rungkut,
-                  Surabaya, Jawa Timur 60297
+                  Jl. Pandugo Timur XIII No.1, Penjaringan Sari, Kec. Rungkut,
+                  Kota SBY, Jawa Timur 60297
                 </p>
               </div>
             </div>
