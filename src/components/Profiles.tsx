@@ -11,7 +11,7 @@ const profiles = [
     icon: <FaUserMd className="w-20 h-20 text-primary" />,
   },
   {
-    name: "Vanya Syifa Andrina, S.Psi",
+    name: "Nur Hidayati,S.Tr.Kes",
     specialization: "Terapis Wicara",
     image: "/images/terapis_bicara.jpeg",
     icon: <FaComments className="w-20 h-20 text-accent" />,
