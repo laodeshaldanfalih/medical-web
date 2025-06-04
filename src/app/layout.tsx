@@ -5,9 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MedicA - Apotek & Layanan Terapi",
+  title: "Hear Speech Care",
   description:
-    "MedicA adalah one-stop solution untuk kebutuhan farmasi dan layanan terapi Anda.",
+    "Hear Speech Care adalah one-stop solution untuk kebutuhan farmasi dan layanan terapi Anda.",
+  icons: {
+    icon: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
