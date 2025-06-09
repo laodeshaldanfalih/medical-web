@@ -10,6 +10,9 @@ import {
   FaComments,
   FaBrain,
   FaTruck,
+  FaFirstAid,
+  FaHome,
+  FaUserNurse,
 } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -39,7 +42,7 @@ const clinicServices = [
       "Membantu anak dengan masalah fisik, sensorik, atau kognitif untuk mencapai kemandirian dalam aktivitas sehari-hari.",
   },
   {
-    icon: <FaClinicMedical className="w-10 h-10" />,
+    icon: <FaUserNurse className="w-10 h-10" />,
     title: "Terapi Perilaku",
     description: "Pendampingan dan terapi untuk perbaikan perilaku anak.",
   },
@@ -74,6 +77,18 @@ const generalServices = [
     title: "Jasa Antar Obat",
     description:
       "Layanan pengantaran obat ke rumah Anda dengan cepat dan aman.",
+  },
+  {
+    icon: <FaFirstAid className="w-10 h-10" />,
+    title: "Wound Care",
+    description:
+      "Perawatan luka profesional dengan peralatan steril dan tenaga medis terlatih.",
+  },
+  {
+    icon: <FaHome className="w-10 h-10" />,
+    title: "Home Visit",
+    description:
+      "Layanan kunjungan ke rumah untuk pemeriksaan kesehatan dan perawatan medis.",
   },
 ];
 
