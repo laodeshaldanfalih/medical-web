@@ -1,5 +1,46 @@
 const articles = [
   {
+    title:
+      "Mendengar untuk Masa Depan yang Lebih Baik: Peran Penting Komite PGPKT",
+    summary:
+      "Gangguan pendengaran dan ketulian merupakan masalah kesehatan yang terus meningkat, memengaruhi masyarakat dari segala usia dan lapisan. Komite Nasional Penanggulangan Gangguan Pendengaran dan Ketulian (Komnas PGPKT) menjadi garda terdepan dalam mengatasi isu ini.",
+    content: `<h2>Mendengar untuk Masa Depan yang Lebih Baik: Peran Penting Komite PGPKT</h2>
+      <p>Gangguan pendengaran dan ketulian merupakan masalah kesehatan yang terus meningkat, memengaruhi masyarakat dari segala usia dan lapisan. Kondisi ini berdampak signifikan terhadap kemampuan berkomunikasi, bersosialisasi, belajar, dan bekerja, yang pada akhirnya dapat menurunkan kualitas hidup. Di Indonesia, Komite Nasional Penanggulangan Gangguan Pendengaran dan Ketulian (Komnas PGPKT) menjadi garda terdepan dalam mengatasi isu ini, dengan visi meningkatkan kesehatan dan kesejahteraan penduduk melalui pendengaran yang lebih baik.</p>
+
+      <h2>Misi Menuju "Sound Hearing 2030"</h2>
+      <p>Dibentuk berdasarkan SK Menteri Kesehatan RI No. 768/Menkes/SK/VII/2007, Komnas PGPKT adalah badan independen yang menjadi mitra Kementerian Kesehatan dalam menyukseskan program "Sound Hearing 2030". Misinya adalah meniadakan gangguan pendengaran yang dapat dicegah pada tahun 2030 melalui pengembangan sistem pemeliharaan kesehatan yang berkelanjutan. Komite ini menargetkan penurunan angka gangguan pendengaran yang dapat dicegah hingga 90% pada tahun 2030.</p>
+
+      <h2>Pendekatan Komprehensif untuk Masalah Kompleks</h2>
+      <p>Komnas PGPKT bersama Komite Daerah (Komda) di tingkat provinsi dan kabupaten/kota telah meluncurkan serangkaian program yang didasarkan pada Rencana Strategi Nasional (Renstranas) dari Kemenkes. Inisiatif ini dikelompokkan ke dalam program utama, program khusus, kampanye nasional, serta survei dan penelitian.</p>
+
+      <h3>Program dan Kegiatan Utama:</h3>
+      
+      <h4>Program Utama:</h4>
+      <p>Meliputi pembentukan Komite Daerah (Komda) di seluruh Indonesia, pembinaan Puskesmas di bidang PGPKT, pelatihan bidan untuk deteksi dini bayi lahir tuli, dan sosialisasi vaksinasi Rubella untuk menurunkan angka kecacatan pada bayi.</p>
+
+      <h4>Program Khusus:</h4>
+      <p>Terdiri dari inisiatif seperti "Indonesia BBT" (Bakti Sosial Bersih Telinga) untuk siswa sekolah, "Helping Hands on Ear Micro Surgery" untuk penderita congek (OMSK), dan "Bright Future for Deaf Babies" yang mendorong vaksinasi dan deteksi dini tuli kongenital. Ada juga program untuk melindungi pendengaran lansia dan siswa SMK dari kebisingan (NIHL).</p>
+
+      <h4>Kampanye Nasional:</h4>
+      <p>Berfokus pada peningkatan kesadaran publik akan pencegahan tuli, mendorong "Less Noise City" untuk mengurangi kebisingan di area publik seperti tempat bermain anak di mal, dan "Kampanye Remaja Sadar Bising" (KRSB) untuk mengedukasi generasi muda tentang bahaya kebisingan dan cara mendengarkan musik yang aman.</p>
+
+      <h4>Survei dan Penelitian:</h4>
+      <p>Komite aktif melakukan riset, seperti survei intensitas bising di tempat umum dan Sekolah Menengah Kejuruan (SMK). Sebuah studi multikomda tentang dampak bising pada siswa SMK menemukan bahwa 71,8% mesin praktik tidak aman karena mengeluarkan bising di atas 85 dB, dan mengakibatkan 52,1% siswa mengalami gangguan pendengaran.</p>
+
+      <h2>Temuan Mengkhawatirkan dari Survei Kebisingan</h2>
+      <p>Survei yang dilakukan Komnas PGPKT menunjukkan data yang memprihatinkan. Survei "BBT" di 20 SD menemukan lebih dari 55% dari 5.827 siswa yang diperiksa memiliki sumbatan kotoran telinga (serumen). Studi lain di tempat bermain anak di mal di 16 kota besar menemukan tingkat kebisingan mencapai 93-128 desibel, jauh di atas ambang batas aman 80 desibel. Survei di 15 SMK juga mencatat kebisingan mesin praktik mencapai lebih dari 100 dB, bahkan ada yang mencapai 120,7 dB, yang berisiko menyebabkan kerusakan pendengaran permanen pada siswa.</p>
+
+      <h2>Seruan untuk Aksi dan Kolaborasi yang Lebih Kuat</h2>
+      <p>Meskipun berbagai upaya dan pencapaian telah diraih, Komnas PGPKT masih menghadapi tantangan, terutama terkait pendanaan dan dukungan penuh dari pemerintah daerah. Komite menekankan perlunya sosialisasi dan advokasi yang lebih luas serta upaya pencegahan yang masif. Akses terhadap alat deteksi dini, terapi, rehabilitasi, serta ketersediaan pendidikan khusus dan lapangan kerja bagi penyandang disabilitas pendengaran menjadi hal yang krusial untuk diperjuangkan.</p>
+
+      <p>Pesannya jelas: pemerintah dan masyarakat harus bertindak sekarang untuk mencegah kenaikan angka gangguan pendengaran. Melindungi pendengaran adalah investasi untuk membangun sumber daya manusia Indonesia yang cerdas, mandiri, dan berkualitas.</p>
+
+      <h2>Referensi</h2>
+      <p>Semua informasi dapat diakses lebih lengkap pada <a href="https://www.scribd.com/document/486539463/5-PROGRAM-DAN-PERAN-KOMITE-PGPKT-2020-1-dr-Indah-3" target="_blank" rel="noopener noreferrer">https://www.scribd.com/document/486539463/5-PROGRAM-DAN-PERAN-KOMITE-PGPKT-2020-1-dr-Indah-3</a></p>`,
+    image: "/images/PGPKT.png",
+    slug: "mendengar-untuk-masa-depan-yang-lebih-baik-peran-penting-komite-pgpkt",
+  },
+  {
     title: "Apa itu Terapi Wicara?",
     summary:
       "Terapi Wicara adalah intervensi medis yang difokuskan pada diagnosis, perawatan, dan pencegahan gangguan komunikasi dan gangguan menelan (disfagia).",
