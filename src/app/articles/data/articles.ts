@@ -213,6 +213,50 @@ const articles = [
       "https://images.pexels.com/photos/12512676/pexels-photo-12512676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     slug: "apa-itu-terapi-perilaku",
   },
+  {
+    title: "10 Tanda Anda Harus Segera Konsultasi ke Dokter THT",
+    summary:
+      "Kenali 10 tanda gangguan telinga, hidung, dan tenggorokan yang harus segera mendapatkan pemeriksaan dokter THT untuk mencegah komplikasi serius.",
+    content: `<h2>10 Tanda Anda Harus Segera Konsultasi ke Dokter THT</h2>
+    <p>Dokter THT (Telinga, Hidung, Tenggorokan) menangani berbagai keluhan yang mempengaruhi pendengaran, pernapasan, dan kesehatan tenggorokan. Mengabaikan gejala dapat memperburuk kondisi. Berikut adalah tanda-tanda yang perlu diwaspadai:</p>
+
+    <h3>1. Gangguan Pendengaran Mendadak</h3>
+    <p>Penurunan pendengaran secara tiba-tiba bisa disebabkan oleh kotoran telinga, infeksi, atau kerusakan saraf. Penanganan cepat dapat mencegah kerusakan permanen.</p>
+
+    <h3>2. Telinga Berdengung (Tinnitus)</h3>
+    <p>Bunyi dengung atau desis yang menetap di telinga perlu pemeriksaan karena bisa terkait dengan masalah saraf atau tekanan darah tinggi.</p>
+
+    <h3>3. Nyeri atau Rasa Penuh di Telinga</h3>
+    <p>Rasa nyeri atau penuh pada telinga bisa menandakan infeksi atau penumpukan cairan di telinga tengah.</p>
+
+    <h3>4. Hidung Tersumbat Berkepanjangan</h3>
+    <p>Sumbatan hidung lebih dari 2 minggu dapat disebabkan oleh sinusitis kronis atau polip hidung.</p>
+
+    <h3>5. Mimisan Berulang</h3>
+    <p>Mimisan yang sering terjadi dapat disebabkan oleh pembuluh darah rapuh, alergi, atau tekanan darah tinggi.</p>
+
+    <h3>6. Sakit Tenggorokan Lebih dari 1 Minggu</h3>
+    <p>Sakit tenggorokan berkepanjangan bisa menjadi tanda infeksi bakteri yang memerlukan penanganan medis.</p>
+
+    <h3>7. Suara Serak Berkepanjangan</h3>
+    <p>Jika suara serak tidak membaik dalam 2 minggu, bisa jadi ada masalah pada pita suara atau laring.</p>
+
+    <h3>8. Benjolan di Leher</h3>
+    <p>Benjolan di leher dapat menandakan infeksi kelenjar getah bening atau kondisi yang lebih serius.</p>
+
+    <h3>9. Vertigo atau Pusing Berputar</h3>
+    <p>Pusing berputar bisa disebabkan oleh gangguan pada telinga dalam yang mempengaruhi keseimbangan tubuh.</p>
+
+    <h3>10. Gangguan Tidur karena Henti Napas (Sleep Apnea)</h3>
+    <p>Dengkuran keras disertai henti napas saat tidur berbahaya dan memerlukan penanganan dokter THT.</p>
+
+    <h2>Kesimpulan</h2>
+    <p>Jika mengalami salah satu dari tanda di atas, segera konsultasikan ke dokter THT. Penanganan cepat dapat mencegah komplikasi dan menjaga kualitas hidup Anda.</p>`,
+
+    image:
+      "https://images.pexels.com/photos/7088492/pexels-photo-7088492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    slug: "10-tanda-harus-ke-dokter-tht",
+  },
 ];
 
 export default articles;
